@@ -38,6 +38,11 @@ It is used for binding data, attributes, expressions, class, styles.
 V-model is input value sensitive.	It is also used to pass props to child components.
 It can be implemented using Local variable watcher	It is a directive that is used to bind one or more attributes
 
+
+V-ON 
+
+Event Modifiers
+
 v-on:click
 -eventlistener click event
 
@@ -46,4 +51,10 @@ v-on:mouseover
 
 v-on:click.once
 -click event only once
+
+TWO WAY DATA BINDING & BEDINGUNGEN
+<input type="text" v-model="name">
+    <p v-if="name.length > 6">Ist sicher!</p>
+    <p v-else-if="name.length < 6">Ist nicht sicher!</p>
+    <p v-else>gerade noch so</p>
 
