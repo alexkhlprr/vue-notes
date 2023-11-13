@@ -4,11 +4,15 @@ var vm = new Vue({
   // options
 })
 
+
+
 MVVM patern
 abgelitet von dem Model-view-viewmodel
 https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel
 
 
+v-bind Directive oder Abgekürzt :bind
+-lässt uns ein HTML-Attribut an Daten in der Vue-Instanz binden
 
 v-model
 - two way data binding
