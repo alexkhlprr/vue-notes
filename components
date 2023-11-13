@@ -1,0 +1,3 @@
+v-model
+- two way data binding
+- for example between a input fiel and a variable 
