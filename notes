@@ -1,3 +1,15 @@
+Vue Instance:
+Ein Objekt das Vvue bereit stellt
+var vm = new Vue({
+  // options
+})
+
+MVVM patern
+abgelitet von dem Model-view-viewmodel
+https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel
+
+
+
 v-model
 - two way data binding
 - for example between a input fiel and a variable 
