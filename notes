@@ -11,10 +11,28 @@ abgelitet von dem Model-view-viewmodel
 https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel
 
 
-v-bind Directive oder Abgekürzt :bind
+
+v-html Directive
+-gibt den Html code in den Daten aus
+-für Links zB
+
+
+v-bind Directive oder Abgekürzt:
 -lässt uns ein HTML-Attribut an Daten in der Vue-Instanz binden
 
 v-model
 - two way data binding
 - for example between a input fiel and a variable 
 dfdfdf
+
+v-model is for two way bindings means: if you change input value, 
+the bound data will be changed and vice versa. But v-bind:value is 
+called one way binding that means: you can change input value by changing 
+bound data but you can't change bound data by changing input value through the element.
+
+                                             V-MODEL/V-BIND
+v-model can be changed or assigned.	v-bind can only be assigned.
+v-model is a two-way binding.	v-bind is a one-way binding.
+v-model is used for binding form elements like inputs, radio buttons, textarea, checkboxes.	It is used for binding data, attributes, expressions, class, styles.
+V-model is input value sensitive.	It is also used to pass props to child components.
+It can be implemented using Local variable watcher	It is a directive that is used to bind one or more attributes
