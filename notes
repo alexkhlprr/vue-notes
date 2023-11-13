@@ -41,3 +41,9 @@ It can be implemented using Local variable watcher	It is a directive that is use
 v-on:click
 -eventlistener click event
 
+v-on:mouseover
+-eventListener when hover over a button
+
+v-on:click.once
+-click event only once
+
