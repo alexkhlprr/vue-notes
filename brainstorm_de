@@ -1,1 +1,22 @@
+Was sind Methoden in Vue?
 
+Methoden sind quasi Funktionen denen ein Name gegen wird und man diese in Html elemente binden kann um
+eine bestimmte Handlung zu erzeugen.
+
+Beispiel von Aufbau:
+
+new Vue({
+  el: "#app",   //INITIALISIERUNG DER APP
+  data: {
+
+  },
+
+
+
+  methods:{
+  nameFunction: function {        //METHODEN
+  return data
+  },
+  }
+}
+)
