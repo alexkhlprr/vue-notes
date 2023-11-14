@@ -1,0 +1,15 @@
+Simples Data binding in Vue Beipiel
+  
+<span>Message: {{ msg }}</span>
+
+  Es wird quasi ein Wert aus dem definierten data: Objekt auf die Html seine übertragen.
+  Ändert sich der Wert in JS so auch in hmtl es wird quasi in html gerendert  
+
+Beipiel des Wertes in JS
+
+new Vue({
+  el: "";
+  data: {
+    msg: "";
+  }
+})
