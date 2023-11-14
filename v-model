@@ -1,1 +1,13 @@
+Das v-model ist ein Two-Way-Binding directive. Es wird meiste Zeit in input forms verwendet, um die von User eingegebene data qusi in JS
+rüberzureichen und in Objekten als Atribute zu lagern.
 
+Die Atribute oder Varialblen können wiederum in html gerendert werden. Wenn sich der eingegebe Input ändert, ändert sich auch der Wert von dem
+v-model Wert.
+
+Beipiel:
+
+<input type="text" v-model="vorname">
+
+data:{
+  vorname: "";
+}
