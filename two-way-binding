@@ -1,0 +1,16 @@
+Two Way Data binding ist ein konstanter austausch zwischen einem model und dem ui.
+ZUsammengassst ist Data Two Way data binding nichts anderes als daten immer wieder hin und her zu senden.
+
+Beispiel von V-MODEL
+
+<input type="text" v-model:"text"> sendet und empfängt daten aus Vue js synchron
+<div> {{ text }} </div>  // gibt input synchron aus
+
+JS
+
+new Vue({
+  el:"#app",
+  data: {
+    name: "",
+}
+})
