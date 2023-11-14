@@ -1,0 +1,3 @@
+Vue directives sind Spezielle atribute die den DOM vue sagen was zu ist. Sie sind meistens mit dem v- prefix gekennzeichnet.
+  Und können für mehrere zwecke Verwendet werden wie zB umd daten zu "binden" und "event listener dienen" oder um das "rendern" zu beinflussen.
+
