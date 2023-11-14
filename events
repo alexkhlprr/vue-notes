@@ -1,0 +1,20 @@
+Events sind nichts anderes als User interaktionen.
+
+es gitb zum beispiel das :click evengt.
+
+<button v-on:click="add">{{ myValue }}</button>       //wir haben ein Wert in JS definiert diesen möchten wir mit hilfe von click event manipulieren
+                                                      //der click Event wird getriggert jedes mal wenn der button gedrückt wird
+
+Wir können die Bedingungen in JS unter methods definieren
+
+new Vue({
+  el: "#app",
+  data: {
+    myValue= 0;  //initialisierter wert Beträgt 0
+  },
+
+  methods: {
+    add; function(){
+    return myValue++    // Methode trigert einen Wert erhöhung +1 
+  }
+})
