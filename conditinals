@@ -1,0 +1,33 @@
+Bedingunden oder auch conditinals von vue JS
+
+folgendes Beispiel
+<input type="text" v-model="name">
+
+Das v-if überprüft die Bedingung die dan in "" steht
+
+<p v-if="name.length > 6"> Ist sicher</p>
+
+in dien fall ünerprüft es die zeichenlänge von der variable "text" in v-model
+Wenn diese Bedingung stimmt wird der text in p returned 
+
+Was ist wenn die ZEichenlänge kleiner als 6 is?
+Hier können wir eine weitere Bedingung hinzufügen mit der:
+
+v-else-if condition
+
+<p v-else-if="text.length < 6"> Ist nicht sicher</p>
+
+Diese Bedingung wird getriggert wenn die conditional true ist
+aber was ist wenn keine der Bedungung eingetroffen ist?
+
+dafür haben wir die default bedingung
+
+v-else diese muss nicht unbedingt eine bedingund stehen haben
+es wird einfach geriggert wenn keine der definierten bedindungen eintritt
+in diesen fall
+
+<p v-else> knapp daneben! </p>
+
+
+ZUSATZ INFO:
+name.length = zeigt wie viele zeichen das wort hat
