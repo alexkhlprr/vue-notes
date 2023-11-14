@@ -1,0 +1,61 @@
+Mit der V-vor directive kann man über Objekte oder arrays rüber iterrieren. Es heißt nichts anderes als wenn wir über jedes einzelne Element in
+Objekte oder Arrays rüberlaufen und es betrachten.
+
+
+
+
+Zusatzinfo:
+arrays sind Sammlungen von bestimmten datentypen
+
+Objekt: zb data:{
+              name:
+            }
+
+ist ein Objekt:
+Objekte haben key: value pairs zb
+
+key (identifikation) | value
+
+name: "Florian"
+age: 21
+
+Wir künnen die v-for directive dazu nutzen um arrays wieder zu geben
+  diese Directive läuft durch alle Elemente durch und kann dynamisch jedes Elemnt ansprechen und es wiedergeben in einer Einzigen zeile
+
+Beispiel:
+
+  <p v-for="name in names"> {{ name }}</p>
+
+die "in" vriable refreziert auf alle einzelnen Elemente
+    so wird jedes einzelne element in dem array name ausgegeben name: ["Baum","Haus","Maus"]
+
+    Outout:
+    Baum
+    Haus
+    Maus
+Es heißt auch durch jedes Element durchlupen und es einzelnd betrachten können
+
+  Um durch ein OBjekt zu loppen müssen wir das gleiche Befehlt verweden hier ein Objekt
+
+    data; {
+      nperson: [
+        { name: "Florian", age: 22},
+          name: "Lisa", age: 24},
+      ]
+    }
+Wenn wir person ausgeben also so
+<p v-for="person in persons">{{ person}} </p>
+  sieht das blöd ais weil die klammern mit gerendert werden
+
+deswegen wollen wir auf die einzelnen keys zugreifen das können wir tun indem wir die dot notation benutzen Beipsiel
+  <p v-for="person in persons"> {{person.name}} - {{person.age}} </p>
+
+Wir können und auch den index der Atribute anzeigen lassen dafür müssen wir zwei variablen definieren
+    <p v-for="(person, index) in persons"> {{ index  }} - {{ person.name }} - {{ person.age }} </p>
+
+Template Tag
+      template TAG ist ein Platzhalter
+      hier können wir die for schleife reinschrieben zb
+<template v-for="person in persons">
+  
+</template>
