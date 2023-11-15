@@ -7,3 +7,5 @@ computed: {
   return Wert
   }
 }
+
+Sind nichts anderes as als MEthoden können aber keine Parameter aufnehmen die wiedergegebenen Werte werden jedoch gecached.
