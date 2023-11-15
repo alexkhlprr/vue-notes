@@ -1,1 +1,9 @@
+computed properties kann funktionen beinhalten und werte zurück geben es ist sehr ähnlich wie methods.
 
+computed properties kännen keine parameter neinhalten und die Werte der variable werden gecached.
+
+computed: {
+  vorname(){
+  return Wert
+  }
+}
